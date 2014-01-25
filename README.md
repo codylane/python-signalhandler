@@ -5,10 +5,7 @@ Cool little library for trapping and handling signals and performing a custom ac
 
 Example Code sighandler.py
 ==========================
-
-
-
-
+```
 from SignalHandler import SignalHandler
 
 def stop():
@@ -39,9 +36,10 @@ if __name__ == '__main__':
     while True:
         print "Waiting for signal.... Running pid: %s" %(os.getpid())
         signal.pause()
-        
+```
 Example Usage From Code Above
 =============================
+```
 $ ./sighandler.py &
 [1] 5277
 Implemented Signals:  (<Class:SigAction signal:15>, <Class:SigAction signal:2>)
@@ -50,3 +48,4 @@ Waiting for signal.... Running pid: 5277
 $ kill 5277
 Called the stop().... Exitting 0
 $
+```
