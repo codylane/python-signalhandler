@@ -5,6 +5,10 @@ Cool little library for trapping and handling signals and performing a custom ac
 
 Example Code sighandler.py
 ==========================
+
+
+
+
 from SignalHandler import SignalHandler
 
 def stop():
