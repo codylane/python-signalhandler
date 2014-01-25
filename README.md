@@ -3,12 +3,8 @@ python-signalhandler
 
 Cool little library for trapping and handling signals and performing a custom action.  This code was created back in 2009 when I had a need to write a custom daemon in python.  The original daemon code was found here, http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/ and this signal handler code was used to processing IPC signals to inform the daemon code to perform special actions.
 
-Example Code
-===================
-##############
-# script: sighandler.py
-#
-##############
+Example Code sighandler.py
+==========================
 from SignalHandler import SignalHandler
 
 def stop():
