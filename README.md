@@ -6,6 +6,9 @@ Cool little library for trapping and handling signals and performing a custom ac
 Example Code sighandler.py
 ==========================
 ```
+import signal
+import os
+import sys
 from SignalHandler import SignalHandler
 
 def stop():
