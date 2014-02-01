@@ -53,6 +53,13 @@ class SignalHandler:
             NOTE: Don't put () around your callback function or the function  
                   will be called when the callback is initialized..           
         '''                                                                   
+        if self.SIGNALS:
+            for signal in self.SIGNALS:
+                if signal.signum == signum:
+                    # ensure only one copy of the signal number is set, but
+                    # assume the consumer wants to update the callback
+                    signal.callback = callback
+                    return
         self.SIGNALS += (SigAction(signum, callback), )                       
 
     def unregister(self, signum):
